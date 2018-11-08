@@ -28,8 +28,8 @@ TRƯỜNG ĐẠI HỌC BÁCH KHOA
 \begin{center}
 \Huge
 \begin{tabular}{@{}l}
-Study the PCA tool of WEKA \\
-and apply it in feature extraction\\[6pt]
+%Data analysis \\ using hadoop MapReduce environment \\[6pt]
+Phân tích dữ liệu\\ sử dụng môi trường Hadoop MapReduce
 \end{tabular}
 \end{center}
 \rule{\textwidth}{1pt}\\[1cm]
@@ -62,7 +62,7 @@ Nguyễn Quốc Long - MSSV:1770023
 
 \newpage
 
-\title{Bài luận tìm hiểu giải thuật Min-conficts}
+\title{Bài luận tìm hiểu về việc sử dụng môi trường Hadoop Map Reduce để phân tích dữ liệu }
 
 \author{  Nguyễn Quốc Long\inst{1}} 
 
@@ -76,22 +76,22 @@ Nguyễn Quốc Long - MSSV:1770023
 
 
 \begin{abstract}
-Tài liệu tìm hiểu về giải thật PCA và phần mền WEKA.
+Tài liệu tìm hiểu về thật ngữ phân tích dữ liệu (data analysis) và môi trường hadoop map-reduce, cũng như việc áp dụng việc phân tích dữ liệu của YouTube sử dụng framework Hadoop MapReduce trên nền tảng đám mây AWS (Amazon Web Services).
 
 
 \end{abstract}
 
 \begin{keywords}
-algorithm, Min-coflicts algorithms, Min-Conflict Hill Climbing algorithms, Min-Conflict Random Walk algorithms ...
+algorithm, hadoop map-reduce, phân tích dữ liệu, data analysis
 \end{keywords} 
 
 
 \section{Giới thiệu}
 
-\textbf{Thuật giải xung đột tối thiểu} 
+\textbf{Phân tích dữ liệu} 
  là một giải thuật dùng khá phổ biến trong giải hệ ràng buộc CSP. Thuật giải xuang đột tối thiểu sẽ chọn ngẫu nhiên một biến nào đó dính líu tới một ràng buộc bị vi phạm rồi chọn một trị từ miền trị của biến này sao cho tối thiểu hóa số lượng những vi phạm ràng buộc có thể xảy ra. Vì vậy thuật giải xung đột tối thiểu thuần túy có thể không thoát ra được điểm tối ưu cục bộ. Thuật giải thường kết hợp với chiến lược random-walk. Với môt biến nào đó được chọn, chiến lược bước ra ngẫu nhiên lấy ngẫu nhiên một trị từ miền trị của biến này với xác suất p, và áp dụng theo Thuật giải xung đột tối thiểu với xác suất 1-p. Giá trị của thông số p có ảnh hưởng lên hiệu quả của Thuật giải xung đột tối thiểu, thuật giải này được gọi là Min-conflict Random Walk.
 
-\textbf{Thuật giải leo đồi (Hilll-climbing)}
+\textbf{Hadoop MapReduce}
  chính là nền tảng cơ sở của các ký thuật tìm kiếm cục bộ.Ở mỗi bước của việc tìm kiếm, chúng ta sẽ chọn một bước mà nó cải thiện giá trị hàm mục tiêu để thực hiện. Trong thuật giải leo đồi, chỉ những bước chuyển cải thiện được hàm chi phí hoặc không làm chi phí thay đổi thì mới đươc chọn vì vậy việc tìm kiếm sẽ liên tục bước lên vị trí cao hơn cho đến khi nó gặp điều kiện ngừng. Mặc dù đây là một giải thuật đơn giản nhưng lại hiệu quả  và rất mạnh trong việc giải quyết các bài toán CSP lớn.
 %$- $  Sao chép các đoạn văn bản từ bài viết của người khác?\\
 
